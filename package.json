@@ -1,0 +1,1 @@
+{"name": "zentry", "version": "1.0.0", "private": true, "type": "module", "description": "Zentry — Tienda virtual de calzado (frontend). Proyecto educativo Ruta Avanzada.", "scripts": {"serve": "npx --yes serve -l 8000 .", "pyserve": "python -m http.server 8000", "check": "node check.mjs", "test:smoke": "node smoke.mjs"}, "devDependencies": {"jsdom": "^25.0.0"}}
