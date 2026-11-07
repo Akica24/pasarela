@@ -18,3 +18,9 @@ desktop.ini
 
 # Build
 /dist/
+
+# Artefactos de pruebas (generados por check.mjs / smoke.mjs)
+check-result.txt
+smoke-result.txt
+smokesyntax.txt
+gitlog*.txt
