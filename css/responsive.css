@@ -1,0 +1,102 @@
+/* ===========================================================================
+   responsive.css — Adaptación a tablets y móviles
+   ----------------------------------------------------------------------------
+   Breakpoints: 992px (tablet landscape), 768px (tablet), 560px (móvil).
+   El diseño es mobile-first en componentes clave y aquí se ajustan las
+   rejillas multicolunna para colapsar correctamente.
+   =========================================================================== */
+
+/* ------------------------- Tablet grande (<=992px) ------------------------ */
+@media (max-width: 992px) {
+  :root { --header-h: 64px; }
+
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-art { aspect-ratio: 16 / 11; order: -1; max-height: 380px; }
+
+  .detail { grid-template-columns: 1fr; }
+  .gallery { position: static; }
+  .gallery-main { max-height: 440px; }
+
+  .cart-layout { grid-template-columns: 1fr; }
+  .cart-summary { position: static; }
+
+  .checkout-layout { grid-template-columns: 1fr; }
+  .summary-card { position: static; }
+
+  .contact-layout { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; }
+
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+
+  .catalog-layout { grid-template-columns: 1fr; }
+  .filters { position: static; }
+}
+
+/* ------------------------- Tablet (<=768px) ------------------------------ */
+@media (max-width: 768px) {
+  /* Navegación colapsable */
+  .nav {
+    position: fixed;
+    inset: var(--header-h) 0 auto 0;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem;
+    transform: translateY(-120%);
+    transition: transform 0.3s ease;
+    box-shadow: var(--shadow);
+    z-index: 40;
+    max-height: calc(100vh - var(--header-h));
+    overflow: auto;
+  }
+  .nav.open { transform: translateY(0); }
+  .nav a { padding: 0.8rem 1rem; border-radius: 10px; }
+  .nav a:hover { background: var(--line-2); }
+  .menu-toggle { display: inline-flex; }
+  .brand-sub { display: none; }
+
+  /* Filtros colapsables en móvil */
+  .filter-toggle { display: inline-flex; }
+  .filters { display: none; }
+  .filters.open { display: block; }
+
+  .offer-band { grid-template-columns: 1fr; }
+  .offer-band .deco { display: none; }
+
+  .form-grid { grid-template-columns: 1fr; }
+  .detail-meta { grid-template-columns: 1fr; }
+
+  .product-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1rem; }
+}
+
+/* ------------------------- Móvil (<=560px) ------------------------------- */
+@media (max-width: 560px) {
+  .product-grid { grid-template-columns: 1fr 1fr; }
+  .cat-grid { grid-template-columns: 1fr 1fr; }
+  .relate-grid { grid-template-columns: 1fr 1fr; }
+  .gallery-thumbs { grid-template-columns: repeat(4, 1fr); }
+
+  .cart-row { grid-template-columns: 64px 1fr; grid-template-areas: "thumb info" "actions actions"; row-gap: 0.6rem; }
+  .cart-row .cart-thumb { grid-area: thumb; }
+  .cart-row .cart-info { grid-area: info; }
+  .cart-row .cart-aside { grid-area: actions; display: flex; justify-content: space-between; align-items: center; }
+  .cart-row .line-total { font-size: 1.1rem; }
+
+  .detail-actions .btn { flex: 1 1 100%; }
+  .hero-stats { gap: 1.25rem; }
+  .hero-stats .num { font-size: 1.4rem; }
+
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+
+  .toast-container { bottom: 5.5rem; }
+  .fab-whatsapp { width: 52px; height: 52px; right: 1rem; bottom: 1rem; }
+}
+
+/* ------------------------- Móvil pequeño (<=380px) ----------------------- */
+@media (max-width: 380px) {
+  .product-grid { grid-template-columns: 1fr; }
+  .cat-grid { grid-template-columns: 1fr; }
+  .relate-grid { grid-template-columns: 1fr; }
+}
