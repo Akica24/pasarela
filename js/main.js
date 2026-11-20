@@ -133,7 +133,7 @@ function renderFooter() {
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="#/" class="brand">Zentry<span class="dot">.</span></a>
+          <a href="#/" class="brand">Pasarela<span class="dot">.</span></a>
           <p style="margin-top:.6rem;max-width:34ch">${escapeHtml(CONFIG.store.tagline)}. Calzado seleccionado con detalle para acompañar cada paso.</p>
           <form class="footer-news" id="newsletter-form" novalidate>
             <label for="nl-email" style="font-size:.8rem;font-weight:600;color:rgba(255,255,255,.8)">Recibe novedades y ofertas</label>

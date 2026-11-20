@@ -13,9 +13,9 @@
  */
 
 const KEYS = {
-  cart: "zentry_cart",
-  wishlist: "zentry_wishlist",
-  ui: "zentry_ui",
+  cart: "pasarela_cart",
+  wishlist: "pasarela_wishlist",
+  ui: "pasarela_ui",
 };
 
 /* ---------------------------------------------------------------------------

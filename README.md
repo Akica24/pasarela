@@ -1,4 +1,4 @@
-# Zentry · Tienda virtual de calzado (Frontend)
+# Pasarela · Tienda virtual de calzado (Frontend)
 
 Proyecto final de la **Ruta Avanzada**: frontend completo, profesional y
 responsive de una tienda de zapatos. Funciona como aplicación de página única
@@ -138,7 +138,7 @@ Edita **un único archivo**: `js/config.js`.
 whatsapp: {
   // Formato internacional SIN "+", espacios ni guiones: país + número
   number: "573125550142",
-  defaultMessage: "¡Hola Zentry! Quisiera hacer una consulta.",
+  defaultMessage: "¡Hola Pasarela! Quisiera hacer una consulta.",
 },
 ```
 

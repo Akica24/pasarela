@@ -97,7 +97,7 @@ export function renderCheckout(_params, view) {
               <div class="field full">
                 <label class="check-line" id="ck-consent-line">
                   <input type="checkbox" id="ck-consent" />
-                  <span>Acepto el tratamiento de mis datos personales para procesar mi pedido, conforme a la política de privacidad de Zentry. <span class="req">*</span></span>
+                  <span>Acepto el tratamiento de mis datos personales para procesar mi pedido, conforme a la política de privacidad de Pasarela. <span class="req">*</span></span>
                 </label>
                 <span class="field-error" id="ck-consent-err"></span>
               </div>

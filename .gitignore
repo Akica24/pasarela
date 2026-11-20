@@ -24,3 +24,11 @@ check-result.txt
 smoke-result.txt
 smokesyntax.txt
 gitlog*.txt
+
+
+# Variables de entorno - NUNCA subir
+.env
+
+# Datos temporales del backend
+backend/sessions/
+backend/uploads/

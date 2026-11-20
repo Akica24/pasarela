@@ -54,7 +54,7 @@ export function renderNosotros(_params, view) {
 
       <div class="about-grid">
         <div>
-          <span class="eyebrow">Sobre Zentry</span>
+          <span class="eyebrow">Sobre Pasarela</span>
           <h2 style="margin:.5rem 0">Calzado con propósito</h2>
           <p>Somos una tienda virtual dedicada a ofrecer calzado de calidad para cada momento del día. Creemos que el par correcto transforma no solo tu estilo, sino también tu forma de caminar por el mundo.</p>
           <p style="margin-top:.75rem">Seleccionamos marcas reconocidas y modelos cuidadosamente elegidos para que encuentres comodidad, durabilidad y diseño en un solo lugar. Comprar con nosotros es simple: eliges, filtras y finalizar tu pedido por WhatsApp en minutos.</p>
@@ -65,7 +65,7 @@ export function renderNosotros(_params, view) {
           </div>
         </div>
         <div class="hero-art float-soft">
-          <img src="${productAboutArt()}" alt="Zentry" />
+          <img src="${productAboutArt()}" alt="Pasarela" />
           <div class="hero-badge bottom"><b>${escapeHtml(s.name)}</b> · ${escapeHtml(s.tagline)}</div>
         </div>
       </div>
