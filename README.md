@@ -118,15 +118,19 @@ Luego abre `http://localhost:8000` en el navegador.
    git add .
    git commit -m "Initial commit"
    git branch -M main
-   git remote add origin https://github.com/USUARIO/tienda-zapatos.git
+   git remote add origin https://github.com/USUARIO/pasarela.git
    git push -u origin main
    ```
 2. En el repositorio, ve a **Settings → Pages**.
 3. En **Source** elige la rama `main` y la carpeta `/ (root)`. Guarda.
 4. En unos minutos tu sitio estará en:
-   `https://USUARIO.github.io/tienda-zapatos/`
+   `https://USUARIO.github.io/pasarela/`
 
 No hay build: los archivos del repositorio se publican tal cual.
+
+**Archivos importantes para GitHub Pages:**
+- `.nojekyll` — Desactiva Jekyll para que no ignore archivos con `_`
+- `404.html` — Maneja rutas de la SPA correctamente
 
 ---
 
